@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Conditions Générales de Vente — MenuDirect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0F1115;
+    --ink-2: #2A2D33;
+    --muted: #6B6F76;
+    --muted-2: #9AA0A6;
+    --line: #E7E5E1;
+    --line-2: #EFEDE8;
+    --bg: #FAF8F5;
+    --surface: #FFFFFF;
+    --accent: #E8702A;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    color: var(--ink);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  .container { max-width: 800px; margin: 0 auto; padding: 0 32px; }
+  @media (max-width: 720px) { .container { padding: 0 20px; } }
+
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(250, 248, 245, 0.85);
+    backdrop-filter: saturate(140%) blur(12px);
+    -webkit-backdrop-filter: saturate(140%) blur(12px);
+    border-bottom: 1px solid rgba(15,17,21,0.06);
+  }
+  .nav-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 32px;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+  }
+  .logo {
+    font-weight: 500; font-size: 17px;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .back-link {
+    font-size: 14px; color: var(--muted);
+    transition: color 160ms ease;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  .legal-header {
+    padding: 80px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .legal-header h1 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    margin: 0 0 12px;
+  }
+  .legal-header .meta {
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .legal-body {
+    padding-bottom: 120px;
+  }
+  .legal-body h2 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin: 48px 0 16px;
+    color: var(--ink);
+  }
+  .legal-body h2:first-child { margin-top: 0; }
+  .legal-body p {
+    font-size: 15px;
+    color: var(--ink-2);
+    line-height: 1.7;
+    margin: 0 0 16px;
+  }
+  .legal-body ul {
+    list-style: none;
+    padding: 0; margin: 0 0 16px;
+  }
+  .legal-body ul li {
+    font-size: 15px;
+    color: var(--ink-2);
+    line-height: 1.7;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 6px;
+  }
+  .legal-body ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--muted-2);
+  }
+  .legal-body a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  .legal-body a:hover { text-decoration: none; }
+
+  footer {
+    background: linear-gradient(to bottom, #073B33 0%, #031411 100%);
+    padding: 40px 0;
+    text-align: center;
+  }
+  .footer-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 32px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+  }
+  .footer-inner a {
+    color: rgba(255,255,255,0.6);
+    margin: 0 12px;
+    transition: color 160ms ease;
+  }
+  .footer-inner a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="MenuDirect.html" class="logo"><img src="logo-clean.png" alt="MenuDirect" style="height:24px;width:auto;" fetchpriority="high"></a>
+    <a href="MenuDirect.html" class="back-link">← Retour au site</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="legal-header">
+    <h1>Conditions Générales de Vente</h1>
+    <div class="meta">Applicables à la solution SnackFlow / MenuDirect · Dernière mise à jour : 20 avril 2026</div>
+  </div>
+
+  <div class="legal-body">
+
+    <h2>1. Objet</h2>
+    <p>Les présentes Conditions Générales de Vente (CGV) régissent l'utilisation de la solution SaaS SnackFlow (commercialisée sous le nom « MenuDirect »), éditée par ZAH Trading (auto-entrepreneur, RCS Metz 900 789 330), ci-après « SnackFlow ».</p>
+    <p>La solution permet aux professionnels de la restauration de recevoir et gérer des commandes via WhatsApp Business API, avec intégration optionnelle à un logiciel de caisse via HubRise.</p>
+
+    <h2>2. Accès au service</h2>
+    <p>L'accès au service est réservé aux professionnels de la restauration (B2B). La souscription est formalisée par la validation d'un devis ou d'une proposition commerciale transmise par SnackFlow. Un appel de présentation gratuit permet de définir les besoins du Client avant toute souscription.</p>
+
+    <h2>3. Description du service</h2>
+    <p>La solution SnackFlow comprend :</p>
+    <ul>
+      <li>Configuration du menu interactif sur WhatsApp Business API</li>
+      <li>Chatbot de prise de commande automatisé (propulsé par IA)</li>
+      <li>Notifications de commande en temps réel (WhatsApp et/ou Telegram)</li>
+      <li>Intégration optionnelle avec le logiciel de caisse (via HubRise)</li>
+      <li>Génération de QR code pour affichage en point de vente</li>
+      <li>Support technique par email et WhatsApp</li>
+    </ul>
+
+    <h2>4. Tarification et paiement</h2>
+    <p>Les tarifs sont communiqués sur devis personnalisé lors de l'appel de présentation. SnackFlow se réserve le droit de modifier ses tarifs avec un préavis de 30 jours. Sauf mention contraire, les paiements sont dus mensuellement. Tout retard de paiement de plus de 15 jours pourra entraîner la suspension du service.</p>
+
+    <h2>5. Durée et résiliation</h2>
+    <p>Le contrat est conclu pour une durée indéterminée, avec un engagement minimum de 3 mois si mentionné dans le devis. Passé l'engagement initial, chaque partie peut résilier le contrat avec un préavis de 30 jours, par email à l'adresse de contact.</p>
+    <p>En cas de résiliation :</p>
+    <ul>
+      <li>Les données du Client (menu, configuration) seront conservées pendant 30 jours puis supprimées</li>
+      <li>Les données des consommateurs finaux seront supprimées conformément à la politique de confidentialité</li>
+    </ul>
+
+    <h2>6. Obligations des parties</h2>
+    <p><strong>SnackFlow s'engage à :</strong></p>
+    <ul>
+      <li>Fournir un service conforme à la description et en assurer la maintenance</li>
+      <li>Assurer la sécurité et la confidentialité des données traitées</li>
+      <li>Fournir un support technique réactif dans un délai raisonnable (24h ouvrées)</li>
+    </ul>
+    <p><strong>Le Client s'engage à :</strong></p>
+    <ul>
+      <li>Fournir des informations exactes et à jour (menu, horaires, contact)</li>
+      <li>Ne pas tenter de contourner les mesures de sécurité de la plateforme</li>
+      <li>S'acquitter des sommes dues dans les délais convenus</li>
+    </ul>
+
+    <h2>7. Traitement des données — Accord de sous-traitance (DPA)</h2>
+    <p>Dans le cadre de l'utilisation du service, SnackFlow traite des données à caractère personnel pour le compte du Client (notamment les numéros WhatsApp et commandes des consommateurs finaux). À ce titre, SnackFlow agit en qualité de sous-traitant au sens de l'article 28 du RGPD.</p>
+    <p>SnackFlow s'engage à :</p>
+    <ul>
+      <li>Ne traiter les données qu'aux fins déterminées par le Client</li>
+      <li>Mettre en œuvre les mesures de sécurité techniques et organisationnelles appropriées</li>
+      <li>Supprimer les données des consommateurs finaux dans un délai de 12 mois suivant la fin du contrat</li>
+      <li>Notifier le Client de tout incident de sécurité affectant ses données dans les meilleurs délais</li>
+    </ul>
+
+    <h2>8. Responsabilité</h2>
+    <p>La responsabilité de SnackFlow est limitée aux dommages directs. SnackFlow ne saurait être tenu responsable des dommages indirects, perte de chiffre d'affaires, ou interruption d'activité résultant d'une défaillance du service.</p>
+    <p>En tout état de cause, la responsabilité globale de SnackFlow ne pourra excéder le montant total des sommes effectivement perçues du Client au cours des trois (3) derniers mois précédant le sinistre.</p>
+    <p>SnackFlow ne peut être tenu responsable des interruptions de service liées aux APIs tierces (WhatsApp/Meta, HubRise) ou aux infrastructures d'hébergement (Railway, Supabase).</p>
+
+    <h2>9. Propriété intellectuelle</h2>
+    <p>La plateforme SnackFlow, son code source, ses interfaces et sa documentation constituent des œuvres protégées au titre du droit de la propriété intellectuelle, dont ZAH Trading est seul titulaire. La souscription n'emporte aucune cession de droits de propriété intellectuelle au bénéfice du Client.</p>
+
+    <h2>10. Confidentialité</h2>
+    <p>Chaque partie s'engage à maintenir confidentielles toutes informations qualifiées comme telles ou dont la nature confidentielle est manifeste, obtenues dans le cadre de la relation contractuelle, et ce pendant toute la durée du contrat et pour une période de deux (2) ans après son terme.</p>
+
+    <h2>11. Modification des CGV</h2>
+    <p>SnackFlow se réserve le droit de modifier les présentes CGV à tout moment. Le Client sera informé de toute modification par email avec un préavis de 30 jours. L'utilisation continue du service après cette période vaut acceptation des nouvelles conditions.</p>
+
+    <h2>12. Droit applicable et juridiction</h2>
+    <p>Les présentes CGV sont soumises au droit français.</p>
+    <p>En cas de litige, les parties s'engagent à rechercher une solution amiable. À défaut, le litige sera soumis aux tribunaux compétents dans le ressort de Metz, France, sauf disposition légale impérative contraire.</p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div style="margin-bottom: 12px;">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Confidentialité</a>
+      <a href="conditions-generales-vente.html">CGV</a>
+    </div>
+    © 2026 Snack-Flow · Luxembourg · Tous droits réservés.
+  </div>
+</footer>
+
+</body>
+</html>

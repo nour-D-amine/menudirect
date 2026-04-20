@@ -1,0 +1,7 @@
+.DS_Store
+.venv/
+.agents/
+__pycache__/
+*.docx
+notebook_summaries.json
+notebooks.txt

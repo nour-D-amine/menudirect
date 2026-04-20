@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mentions légales — MenuDirect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0F1115;
+    --ink-2: #2A2D33;
+    --muted: #6B6F76;
+    --muted-2: #9AA0A6;
+    --line: #E7E5E1;
+    --line-2: #EFEDE8;
+    --bg: #FAF8F5;
+    --surface: #FFFFFF;
+    --accent: #E8702A;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    color: var(--ink);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  .container { max-width: 800px; margin: 0 auto; padding: 0 32px; }
+  @media (max-width: 720px) { .container { padding: 0 20px; } }
+
+  /* NAV */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(250, 248, 245, 0.85);
+    backdrop-filter: saturate(140%) blur(12px);
+    -webkit-backdrop-filter: saturate(140%) blur(12px);
+    border-bottom: 1px solid rgba(15,17,21,0.06);
+  }
+  .nav-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 32px;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+  }
+  .logo {
+    font-weight: 500; font-size: 17px;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .back-link {
+    font-size: 14px; color: var(--muted);
+    transition: color 160ms ease;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  /* LEGAL CONTENT */
+  .legal-header {
+    padding: 80px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .legal-header h1 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    margin: 0 0 12px;
+  }
+  .legal-header .meta {
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .legal-body {
+    padding-bottom: 120px;
+  }
+  .legal-body h2 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin: 48px 0 16px;
+    color: var(--ink);
+  }
+  .legal-body h2:first-child { margin-top: 0; }
+  .legal-body p {
+    font-size: 15px;
+    color: var(--ink-2);
+    line-height: 1.7;
+    margin: 0 0 16px;
+  }
+  .legal-body ul {
+    list-style: none;
+    padding: 0; margin: 0 0 16px;
+  }
+  .legal-body ul li {
+    font-size: 15px;
+    color: var(--ink-2);
+    line-height: 1.7;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 6px;
+  }
+  .legal-body ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--muted-2);
+  }
+  .legal-body a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  .legal-body a:hover { text-decoration: none; }
+
+  /* FOOTER */
+  footer {
+    background: linear-gradient(to bottom, #073B33 0%, #031411 100%);
+    padding: 40px 0;
+    text-align: center;
+  }
+  .footer-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 32px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+  }
+  .footer-inner a {
+    color: rgba(255,255,255,0.6);
+    margin: 0 12px;
+    transition: color 160ms ease;
+  }
+  .footer-inner a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="MenuDirect.html" class="logo"><img src="logo-clean.png" alt="MenuDirect" style="height:24px;width:auto;" fetchpriority="high"></a>
+    <a href="MenuDirect.html" class="back-link">← Retour au site</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="legal-header">
+    <h1>Mentions légales</h1>
+    <div class="meta">Site web : menudirect.fr · Dernière mise à jour : 20 avril 2026</div>
+  </div>
+
+  <div class="legal-body">
+
+    <h2>1. Éditeur du site</h2>
+    <p>
+      Raison sociale : ZAH Trading<br>
+      Nom commercial : SnackFlow / MenuDirect<br>
+      Statut juridique : Auto-entrepreneur<br>
+      Numéro RCS : 900 789 330 R.C.S. Metz<br>
+      Siège social : 57000 Metz, France<br>
+      Email de contact : <a href="mailto:nour.aithocine@gmail.com">nour.aithocine@gmail.com</a>
+    </p>
+
+    <h2>2. Hébergeur du site</h2>
+    <p>
+      Hébergeur du nom de domaine : Hostinger<br>
+      Hostinger International Ltd, 61 Lordou Vironos Street, 6023 Larnaca, Chypre
+    </p>
+    <p>
+      Hébergeur de l'application : Railway (Railway Corp.)<br>
+      340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis
+    </p>
+
+    <h2>3. Propriété intellectuelle</h2>
+    <p>L'ensemble du contenu présent sur le site menudirect.fr (textes, graphismes, logo, structure) est la propriété exclusive de ZAH Trading, sauf mention contraire. Toute reproduction, distribution ou utilisation sans autorisation préalable écrite est strictement interdite.</p>
+
+    <h2>4. Limitation de responsabilité</h2>
+    <p>ZAH Trading s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, ZAH Trading ne peut garantir l'exactitude, la complétude ou l'actualité des informations. En conséquence, l'utilisateur reconnaît utiliser ces informations sous sa responsabilité exclusive.</p>
+
+    <h2>5. Contact</h2>
+    <p>Pour toute question relative au site ou à nos services, vous pouvez nous contacter à l'adresse suivante : <a href="mailto:nour.aithocine@gmail.com">nour.aithocine@gmail.com</a></p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div style="margin-bottom: 12px;">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Confidentialité</a>
+      <a href="conditions-generales-vente.html">CGV</a>
+    </div>
+    © 2026 Snack-Flow · Luxembourg · Tous droits réservés.
+  </div>
+</footer>
+
+</body>
+</html>
